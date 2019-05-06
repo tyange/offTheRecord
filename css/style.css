@@ -434,21 +434,34 @@ h1 a img{
 }
 .section2 .wrap>div{
     float:left;
-    margin-right:20px;
 }
 
 .twitter{
     opacity:0.5;
     transition:all 0.5s;
-    margin-right:22px;
 }
 .twitter:hover{
     opacity:0.9;
 }
+
+#instafeed{
+    width:313px;
+    height:208px;
+    margin-right:20px;
+    margin-left:21px;
+}
+#instafeed a{
+    float:left;
+
+}
+#instafeed a img{
+    width:103.5px;
+    height:auto;
+}
+
 .section2 .wrap .youtube{
     width:313px;
     height:208px;
-    margin-right:0;
     background:#ccc;
     text-align:center;
     opacity:0.5;
