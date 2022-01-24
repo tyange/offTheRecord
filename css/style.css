@@ -143,26 +143,18 @@ h1 a img {
   transition: all 0.5s;
 }
 
-/*----------------------메인비주얼영역-----------------*/
+/* main 영역 */
 
-.mainvisual {
-  width: 100%;
-  height: 650px;
-  background: #000;
+main {
+  padding-top: 2rem;
 }
+
 .mv {
-  width: 980px;
-
-  margin: 0 auto;
-  background: #fff;
-  position: relative;
-}
-
-.mv iframe {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  margin-left: -490px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 /*----------------------서브배너영역-----------*/
@@ -421,9 +413,7 @@ h1 a img {
   width: 980px;
   height: 100%;
   margin: 0 auto;
-}
-.section2 .wrap > div {
-  float: left;
+  display: flex;
 }
 
 .twitter {
@@ -434,18 +424,48 @@ h1 a img {
   opacity: 0.9;
 }
 
-#instafeed {
+.blog-link {
   width: 313px;
   height: 208px;
   margin-right: 20px;
   margin-left: 21px;
+  background-color: #fff8e7;
+  opacity: 0.5;
+  transition: all 0.5s ease;
 }
-#instafeed a {
-  float: left;
+
+.blog-link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-#instafeed a img {
-  width: 103.5px;
-  height: auto;
+
+.blog-link a span {
+  font-family: "Paytone One", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 0 0.1em;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.blog-link:hover {
+  opacity: 1;
+}
+
+.blog-link:hover span {
+  background-size: 100% 0.1em;
+  color: var(--grey-color900);
 }
 
 .section2 .wrap .youtube {
@@ -457,6 +477,7 @@ h1 a img {
   transition: all 0.5s;
   cursor: pointer;
 }
+
 .youtubeTxt {
   float: right;
   line-height: 1.5;
@@ -465,14 +486,17 @@ h1 a img {
   font-family: SangSangFlowerRoad;
   font-size: 40px;
 }
+
 .youtube i {
   font-size: 50px;
   margin-top: 85px;
   transition: all 0.5s;
 }
+
 .section2 .wrap .youtube:hover {
   opacity: 1;
 }
+
 .section2 .wrap .youtube:hover i {
   color: red;
 }
